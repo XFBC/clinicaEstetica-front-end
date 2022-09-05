@@ -6,7 +6,7 @@ export default function InformacoesPessoais() {
           <h2 className="text-xl font-semibold pb-4">Informaçoes Pessoais</h2>
           <div className="grid w-[90%] md:max-w-[70%]  card bg-gray-700 rounded-box form-control py-10 items-center">
             <form>
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-4 px-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4">
                 <div>
                   <label className="label">
                     <span className="label-text font-semibold">Nome</span>

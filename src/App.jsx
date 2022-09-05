@@ -4,7 +4,7 @@ import { Footer } from './components/Footer'
 import NovoCadastro from './pages/NovoCadastro'
 import Home from './pages/Home'
 import ConsultaCadastro from './pages/ConsultaCadastro'
-import './styles/styles.css'
+
 function App() {
   return (
     <>
