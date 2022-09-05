@@ -1,32 +1,22 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Home from './pages/Home';
-import Contato from './pages/Contato';
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import { Header } from './components/Header'
+import { Footer } from './components/Footer'
+import NovoCadastro from './pages/NovoCadastro'
+import Home from './pages/Home'
+import ConsultaCadastro from './pages/ConsultaCadastro'
+import './styles/styles.css'
 function App() {
-
   return (
     <>
       <BrowserRouter>
         <Header />
-        <div className="flex justify-center flex-col items-center py-4">
-          <p>Este template usa as seguintes dependências</p>
-          <ul className="text-center">
-            <li>Sass</li>
-            <li>Tailwind Css</li>
-            <li>DaisyUI</li>
-            <li>Swiper JS</li>
-            <li>React Router Dom 6</li>
-            <li>React Icons</li>
-          </ul>
-        </div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/contato" element={<Contato />} />
+          <Route path="/novocadastro" element={<NovoCadastro />} />
+          <Route path="/ConsultaCadastro" element={<ConsultaCadastro />} />
         </Routes>
         <Footer />
       </BrowserRouter>
-
     </>
   )
 }
