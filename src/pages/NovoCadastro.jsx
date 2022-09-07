@@ -1,10 +1,10 @@
 import React from 'react'
-import InformacoesPessoais from '../components/Sections/InformacoesPessoais'
+import InformacoesPessoais from '../components/Form/InformacoesPessoais'
 
 export default function NovoCadastro() {
   return (
     <>
-      <div className="text-center">Cadastre um paciente:</div>
+      <div className="text-center pt-24"></div>
       <InformacoesPessoais />
     </>
   )
