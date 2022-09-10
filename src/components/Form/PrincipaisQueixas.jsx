@@ -1,17 +1,21 @@
 import { Link } from 'react-router-dom'
+import Breadcrumb from '../Layout/Breadcrumb'
 
 export default function PrincipaisQueixas() {
   return (
     <div>
-      <div className="py-28">
+      <div>
+        <Breadcrumb />
+      </div>
+      <div>
         <h2 className="text-2xl font-semibold pb-4 lg:pl-[15%] md:pl-[18%] pl-[10%]">
           Principais queixas
         </h2>
-        <div className="flex flex-col w-[100%] border-opacity-50 items-center pt-2 ">
-          <div className="grid w-[90%] md:max-w-[70%]  card bg-gray-200 rounded-box form-control py-10 items-center">
+        <div className="flex flex-col w-[100%] border-opacity-50 items-center pt-2 relative  ">
+          <div className="grid w-[90%] md:max-w-[70%]  card bg-gray-200 rounded-box py-10 items-center ">
             <div class="grid lg:grid-cols-3 grid-cols-1  gap-4 px-2">
               <form>
-                <div className="form-control  ">
+                <div className="form-control">
                   <div className="cursor-pointer label border-gray-400 border-solid border-[0.5px] mb-2  rounded-md flex flex-col items-start">
                     <span className="label-text pb-2 ml-2">ACNE</span>
 
@@ -166,10 +170,18 @@ export default function PrincipaisQueixas() {
             <form>
               <div className="grid grid-cols-6"></div>
 
-              <div className="flex flex-row justify-between lg:px-8 p-2 ">
-                <button className="btn btn-outline btn-success mt-10 btn-sm md:btn-md lg:btn-md w-32">
-                  Salvar
-                </button>
+              <div className="flex lg:flex-row flex-col  justify-between lg:px-8 p-2 ">
+                <div className="flex flex-row gap-2">
+                  <Link
+                    className="btn btn-outline btn-success mt-10 btn-sm md:btn-md lg:btn-md w-32"
+                    to="/novocadastro"
+                  >
+                    voltar
+                  </Link>
+                  <button className="btn btn-outline btn-success mt-10 btn-sm md:btn-md lg:btn-md w-32">
+                    Salvar
+                  </button>
+                </div>
                 <Link
                   className="btn btn-outline btn-success mt-10 btn-sm md:btn-md lg:btn-md w-32"
                   to="/historicodesaude"

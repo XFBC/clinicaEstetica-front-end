@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom'
+import Breadcrumb from '../Layout/Breadcrumb'
 
 export default function InformacoesPessoais() {
   return (
     <>
+      <div className="">
+        <Breadcrumb />
+      </div>
       <div>
         <h2 className="text-2xl font-semibold pb-4 lg:pl-[15%] md:pl-[18%] pl-[10%]">
           Informaçoes Pessoais

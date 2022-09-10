@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
+import Breadcrumb from '../Layout/Breadcrumb'
 
 export default function HistoricoDeSaude() {
   return (
     <div>
       <div>
-        <div className="py-28">
+        <Breadcrumb />
+        <div>
           <h2 className="text-2xl font-semibold pb-4 lg:pl-[15%] md:pl-[18%] pl-[10%]">
             Histórico de saúde
           </h2>
@@ -12,31 +14,6 @@ export default function HistoricoDeSaude() {
             <div className="grid w-[90%] md:max-w-[70%]  card bg-gray-200 rounded-box form-control py-10 items-center">
               <div class="grid lg:grid-cols-3 grid-cols-1  gap-4 px-2">
                 <form>
-                  <div className="form-control  ">
-                    <label className="cursor-pointer label  border-gray-400 border-solid border-[0.5px] mb-2  rounded-md">
-                      <span className="label-text">Hipertensão</span>
-                      <div className="col-2 flex flex-row gap-2">
-                        <input type="radio" className="radio " />
-                        <span>Sim</span>
-                      </div>
-                      <div className="col-2 flex flex-row gap-2">
-                        <input type="radio" className="radio " />
-                        <span>Não</span>
-                      </div>
-                    </label>
-                    <label className="cursor-pointer label  border-gray-400 border-solid border-[0.5px] mb-2  rounded-md">
-                      <span className="label-text">Hipotensão</span>
-                      <div className="col-2 flex flex-row gap-2">
-                        <input type="radio" className="radio " />
-                        <span>Sim</span>
-                      </div>
-                      <div className="col-2 flex flex-row gap-2">
-                        <input type="radio" className="radio " />
-                        <span>Não</span>
-                      </div>
-                    </label>
-                  </div>
-
                   <div className="form-control">
                     <label className="cursor-pointer label  border-gray-400 border-solid border-[0.5px] mb-2 rounded-md">
                       <span className="label-text">Diabetes</span>
@@ -129,7 +106,7 @@ export default function HistoricoDeSaude() {
                 </div>
                 <Link
                   className="btn btn-outline btn-success mt-10 btn-sm md:btn-md lg:btn-md w-32"
-                  to="/historicodesaude"
+                  to="/historicohormonal"
                 >
                   Avançar
                 </Link>

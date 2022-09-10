@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ConsultaCadastro() {
   return (
-    <div className="pt-24 ">
+    <div className="">
       <div>
         <label className="label">
           <span className="label-text font-semibold">
