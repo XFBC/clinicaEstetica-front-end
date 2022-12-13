@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom'
 
 export default function Breadcrumb({ children }) {
   return (
-    <div className="text-sm breadcrumbs pl-20 pb-20">
-      <ul>
+    <div className="text-sm breadcrumbs ">
+      <ul className="flex flex-wrap">
         <li>
           <Link to="/novocadastro">Informacoes pessoais</Link>
         </li>
