@@ -1,8 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from './style.module.scss'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import { useState } from 'react'
 
 export function Header() {
+  const [toggle, setToggle] = useState(false)
   return (
     <header>
       <nav id="header" class="sticky w-full">
@@ -18,22 +21,7 @@ export function Header() {
               </div>
             </div>
 
-            <div class="pr-4">
-              <button
-                id="nav-toggle"
-                class="block lg:hidden items-center px-3 py-2 border rounded text-grey border-grey-dark hover:text-black hover:border-purple appearance-none focus:outline-none"
-              >
-                <svg
-                  class="fill-current h-3 w-3"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Menu</title>
-                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                </svg>
-              </button>
-            </div>
-
+            {/* Desktop nav  */}
             <div
               class="w-full flex-grow  lg:flex-1 lg:content-center lg:justify-end lg:w-auto hidden lg:block mt-2 lg:mt-0 z-20"
               id="nav-content"
@@ -61,6 +49,43 @@ export function Header() {
                   </a>
                 </li>
               </ul>
+            </div>
+
+            {/* Mobile nav */}
+            <div className="sm:hidden flex ustify-end items-center mr-6">
+              <button onClick={() => setToggle(prev => !prev)}>
+                {toggle ? <AiOutlineClose /> : <AiOutlineMenu />}
+              </button>
+              <div
+                className={`${
+                  toggle ? 'flex ' : 'hidden'
+                } p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-lg bg-gray-400`}
+              >
+                <ul className="list-none flex justify-center items-center flex-col mx-8">
+                  <li>
+                    <a class="inline-block py-2  text-black" href="#">
+                      <Link to="/">Home</Link>
+                    </a>
+                  </li>
+                  <li>
+                    {' '}
+                    <a
+                      class="inline-block text-grey-dark no-underline hover:text-black  py-2"
+                      href="#"
+                    >
+                      <Link to="/novocadastro">Novo cadastro</Link>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="inline-block text-grey-dark no-underline hover:text-black py-2 "
+                      href="#"
+                    >
+                      <Link to="/ConsultaCadastro">Consulta cadastro</Link>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
