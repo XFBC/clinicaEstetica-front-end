@@ -20,3 +20,48 @@ export const informacoesPessoais = [
     placeholder: 'Digite a data de nasc...'
   }
 ]
+
+export const principaisQueixas = [
+  {
+    title: 'Acne',
+    option: [
+      {
+        option: 'Acne'
+      },
+      {
+        option: 'HPI'
+      },
+      {
+        option: 'Melasma'
+      }
+    ]
+  },
+  {
+    title: 'Quanto tempo encomoda ?',
+    option: [
+      {
+        option: 'Menos de 1 ano'
+      },
+      {
+        option: 'De 1 a 3 anos'
+      },
+      {
+        option: 'Mais de 5 anos'
+      }
+    ]
+  },
+  {
+    title: 'Home care em uso?',
+    option: [
+      {
+        option: 'Menos de 1 ano'
+      },
+      {
+        option: 'De 1 a 3 anos'
+      },
+      {
+        option: 'Mais de 5 anos'
+      }
+    ]
+  }
+]
