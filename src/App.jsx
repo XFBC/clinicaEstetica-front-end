@@ -15,7 +15,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} exact />
           <Route path="/novocadastro" element={<NovoCadastro />} />
           <Route path="/ConsultaCadastro" element={<ConsultaCadastro />} />
           <Route path="/principaisqueixas" element={<PrincipaisQueixas />} />

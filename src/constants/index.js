@@ -65,3 +65,18 @@ export const principaisQueixas = [
     ]
   }
 ]
+
+export const historicoSaude = [
+  {
+    title: 'Diabetes'
+  },
+  {
+    title: 'Problemas cardíacos'
+  },
+  {
+    title: 'Alergia alimentares'
+  },
+  {
+    title: 'Doenças estomacais/intestinais'
+  }
+]
